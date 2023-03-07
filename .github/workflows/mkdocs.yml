@@ -38,19 +38,22 @@ jobs:
     needs: Set_up_Python
     runs-on: ubuntu-latest
     steps:
-      run: python -V
+      - name: Python version
+        run: python -V
 
   install_mkdocs:
     needs: Set_up_Python
     runs-on: ubuntu-latest
     steps:
-      run:  pip install mkdocs
+      - name: install mkdocs
+        run: pip install mkdocs
 
   Build: 
     needs: install_mkdocs
     runs-on: ubuntu-latest
     steps:
-      run:  mkdocs build
+      - name: Build
+        run: mkdocs build
 
   deploy:
     needs: Build
