@@ -14,7 +14,8 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  repository-projects: write
+  read-all
+  write-all
 
 # Allow one concurrent deployment
 concurrency:
