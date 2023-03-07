@@ -36,8 +36,7 @@ jobs:
       - name: install mkdocs
         run: pip install mkdocs
       - name: Build
-        run: git version && mkdocs gh-deploy
-      - name: Setup Pages
+        run: mkdocs build
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
