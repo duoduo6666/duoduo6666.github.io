@@ -53,9 +53,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: mkdocs build
+        run: python -m mkdocs build
 
-  deploy:
+  deploy:a
     needs: Build
     environment:
       name: github-pages
