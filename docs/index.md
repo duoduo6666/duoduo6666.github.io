@@ -1,1 +1,2 @@
 # Welcome to duoduoのblog
+test
