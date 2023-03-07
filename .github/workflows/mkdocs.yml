@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-python@v3
 
   Build: 
-    needs: [install_mkdocs, Checkout]
+    needs: [Set_up_Python, Checkout]
     runs-on: ubuntu-latest
     steps:
       - name: install mkdocs
