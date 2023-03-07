@@ -34,19 +34,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
 
-  Python_version:
-    needs: Set_up_Python
-    runs-on: ubuntu-latest
-    steps:
-      - name: Python version
-        run: python -V
-
   install_mkdocs:
     needs: Set_up_Python
     runs-on: ubuntu-latest
     steps:
       - name: install mkdocs
-        run: pip install mkdocs
+        run: python -m pip install mkdocs
 
   Build: 
     needs: [install_mkdocs, Checkout]
