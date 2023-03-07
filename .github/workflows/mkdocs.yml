@@ -22,7 +22,6 @@ concurrency:
 
 jobs:
   Build: 
-    needs: [Set_up_Python, Checkout]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
