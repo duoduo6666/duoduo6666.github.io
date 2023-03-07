@@ -33,7 +33,7 @@ jobs:
       - name: install mkdocs
         run: pip install mkdocs
       - name: Build
-        run: mkdocs gh-deploy
+        run: git version && mkdocs gh-deploy
 
   Deploy:
     needs: Build
