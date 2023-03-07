@@ -49,7 +49,7 @@ jobs:
         run: pip install mkdocs
 
   Build: 
-    needs: install_mkdocs
+    needs: [install_mkdocs, Checkout]
     runs-on: ubuntu-latest
     steps:
       - name: Build
