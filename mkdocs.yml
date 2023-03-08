@@ -16,6 +16,8 @@ nav:
 
 theme:
     name: mkdocs
+    nav_style: light
+    locale: zh_CN
     analytics:
         gtag: G-BQMB1MDMK7
 
