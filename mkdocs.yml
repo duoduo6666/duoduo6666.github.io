@@ -5,3 +5,5 @@ edit_uri:  edit/main/docs/
 repo_name: GitHub
 
 site_author: duoduo
+hooks:
+    - my_hooks.py
