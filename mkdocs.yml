@@ -1,9 +1,23 @@
 site_name: duoduoのblog
 site_url:  https://blog.duoduoqaq.top/
+
 repo_url:  https://github.com/duoduo6666/duoduo6666.github.io
 edit_uri:  edit/main/docs/
 repo_name: GitHub
 
 site_author: duoduo
+
+nav:
+  - 首页: "index.md"
+  - 笔记: 
+    - 安装 SSH 服务端 (OpenSSH): 笔记/安装 SSH 服务端 (OpenSSH).md
+  - GitHub: https://github.com/duoduo6666
+  - Bilibili: https://space.bilibili.com/517176306
+
+theme:
+    name: mkdocs
+    analytics:
+        gtag: G-BQMB1MDMK7
+
 hooks:
-    - my_hooks.py
+  - my_hooks.py
