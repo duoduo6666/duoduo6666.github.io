@@ -1,4 +1,6 @@
 from urllib.parse import unquote
+from re import compile
+import re
 
 site_author_url = "https://github.com/duoduo6666/"
 
@@ -14,5 +16,16 @@ def on_page_markdown(markdown:str, **kwargs):
     site_url = kwargs["config"]["site_url"]
     url = kwargs["page"].url
     url_decode = unquote(kwargs["page"].url)
+
+    macro = {
+        "state":state.format(site_author_url=site_author_url, site_author=site_author, site_url=site_url, url=url, url_decode=url_decode),
+        }
     
-    return markdown.format(state=state.format(site_author_url=site_author_url, site_author=site_author, site_url=site_url, url=url, url_decode=url_decode))
+    pattern = compile("<python-script>.*</python-script>")
+    match = pattern.search(markdown)
+    while match:
+        s = match.group()[15:-16].format(**macro)
+        markdown = markdown[:match.start()] + s + markdown[match.end():]
+        match = pattern.search(markdown)
+    
+    return markdown

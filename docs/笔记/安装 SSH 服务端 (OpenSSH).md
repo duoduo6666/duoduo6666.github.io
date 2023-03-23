@@ -1,5 +1,5 @@
 # 安装 SSH 服务端 (OpenSSH)
-{state}
+<python-script>{state}</python-script>
 
 ## 安装
 
