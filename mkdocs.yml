@@ -11,8 +11,8 @@ nav:
   - 首页: "index.md"
   - 笔记: 
     - 安装 SSH 服务端 (OpenSSH): 笔记/安装 SSH 服务端 (OpenSSH).md
-  - GitHub: https://github.com/duoduo6666
   - Bilibili: https://space.bilibili.com/517176306
+  - GitHub: https://github.com/duoduo6666
 
 theme:
     name: mkdocs
