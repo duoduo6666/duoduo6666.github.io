@@ -22,4 +22,4 @@ theme:
         gtag: G-BQMB1MDMK7
 
 hooks:
-  - my_hooks.py
+  - script.py

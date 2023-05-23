@@ -1,6 +1,8 @@
 from urllib.parse import unquote
 from re import compile
 
+class MacroError(Exception): pass
+
 def read_macro(name:str) -> str:
     with open(f"macro/{name}.md", "r", encoding="UTF-8") as f:
         macro = f.read()
@@ -19,7 +21,10 @@ def on_page_markdown(markdown:str, **kwargs):
     pattern = compile("<python-script>.*</python-script>")
     match = pattern.search(markdown)
     while match:
-        s = match.group()[15:-16].format(**macro)
+        try:
+            s = match.group()[15:-16].format(**macro)
+        except KeyError:
+            raise MacroError("未找到这个宏")
         markdown = markdown[:match.start()] + s + markdown[match.end():]
         match = pattern.search(markdown)
     
