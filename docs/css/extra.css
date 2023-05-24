@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url("/fonts/UbuntuMono-Regular.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+  font-family: "Ubuntu";
+}
+
+code {
+  font-family: "UbuntuMono";
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}

@@ -15,11 +15,13 @@ nav:
   - GitHub: https://github.com/duoduo6666
 
 theme:
-    name: mkdocs
-    nav_style: light
-    locale: zh_CN
-    analytics:
-        gtag: G-BQMB1MDMK7
-
+  name: mkdocs
+  nav_style: light
+  locale: zh_CN
+  navigation_depth: 3
+  analytics:
+    gtag: G-BQMB1MDMK7
+extra_css:
+  - css/extra.css
 hooks:
   - script.py
