@@ -1,4 +1,5 @@
 # SHA-1 算法
+<python-script>{state}</python-script>
 有关SHA的文档可以参阅[NIST.FIPS.180-4.pdf](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
 
 ------------------------------------------------------------------------------------
