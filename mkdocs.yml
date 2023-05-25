@@ -18,7 +18,7 @@ theme:
   name: mkdocs
   nav_style: light
   locale: zh_CN
-  navigation_depth: 3
+  navigation_depth: 4
   analytics:
     gtag: G-BQMB1MDMK7
 extra_css:
