@@ -13,6 +13,7 @@ nav:
     - 安装 SSH 服务端 (OpenSSH): 笔记/安装 SSH 服务端 (OpenSSH).md
   - Bilibili: https://space.bilibili.com/517176306
   - GitHub: https://github.com/duoduo6666
+  - GitLab: https://gitlab.duo-duo.top:46765/explore
 
 theme:
   name: mkdocs
