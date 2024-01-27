@@ -9,8 +9,9 @@ def read_macro(name:str) -> str:
     return macro
 
 def on_page_markdown(markdown:str, **kwargs):
+    print(kwargs["config"]["nav"])
     macro = {
-        "site_author_url": kwargs["config"]["nav"][-1]["GitHub"],
+        "site_author_url": kwargs["config"]["nav"][3]["GitHub"],
         "site_author": kwargs["config"]["site_author"],
         "site_url": kwargs["config"]["site_url"],
         "url": kwargs["page"].url,
