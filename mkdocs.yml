@@ -22,7 +22,17 @@ theme:
   navigation_depth: 4
   analytics:
     gtag: G-BQMB1MDMK7
-extra_css:
-  - css/extra.css
+
 hooks:
   - script.py
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
