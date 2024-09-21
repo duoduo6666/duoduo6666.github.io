@@ -16,7 +16,7 @@ nav:
   - GitLab: https://gitlab.duo-duo.top:46765/explore
 
 theme:
-  name: mkdocs
+  name: material
   nav_style: light
   locale: zh_CN
   navigation_depth: 4
